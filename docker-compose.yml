@@ -1,0 +1,9 @@
+services:
+  porechop:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PORECHOP_GIT_URL: "https://github.com/trangdo-hsc/Porechop.git"
+        PORECHOP_REF: "e0e2f34"
+    image: ghcr.io/trangdo-hsc/porechop:e0e2f34
